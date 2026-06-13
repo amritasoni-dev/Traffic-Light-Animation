@@ -40,4 +40,5 @@ Through this project, I practiced:
 ## 👨‍💻 Author
 
 Amrita Soni
+
 Aspiring Computer Science and AI Student.
