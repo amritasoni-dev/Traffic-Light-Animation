@@ -2,7 +2,7 @@
 
 # Traffic Light Animation 🚦
 
-### 🔗 [Live Demo](https://amritasoni-dev.github.io/Traffic-Light-Animation/)
+### 🔗 [Live Demo](https://amritasoni-dev.github.io/Traffic-Light-Animation/roadLight.html)
 
 ![Demo](Demo.png)
 
