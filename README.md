@@ -23,7 +23,7 @@ A pure HTML and CSS project featuring an animated traffic signal, synchronized v
 
 ## 📸 Preview
 
-(Add a screenshot or GIF here)
+![Traffic Light Animation](Screenshot%202026-06-13%20101914.png) 
 
 ## 🎯 What I Learned
 
