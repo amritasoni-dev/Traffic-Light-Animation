@@ -1,0 +1,200 @@
+.frame{
+    height: 470px;
+    width: 200px;
+    background-color: #0f1111;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.pole{
+    width: 20px;
+    height: 100px;
+    background: #0f1111;
+    margin-left: 85px;
+    position: relative;
+}
+.road{
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    position: relative;
+    z-index: 3;
+    border: 4px solid white;
+}
+.red, .yellow, .green{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto;
+}
+.red{
+    animation: redCycle 9s linear infinite ;
+}
+.yellow{
+    animation: yellowCycle 9s linear infinite;
+}
+.green{
+    animation: greenCycle 9s linear infinite;
+}
+@keyframes greenCycle{
+
+    0%,29%{
+        background:#00ff00;
+        box-shadow:0 0 25px #00ff00;
+    }
+
+    30%,64%{
+        background:#003300;
+        box-shadow:none;
+    }
+
+    65%,100%{
+        background:#00ff00;
+        box-shadow:0 0 25px #00ff00;
+    }
+}
+@keyframes yellowCycle{
+
+    0%,29%{
+        background:#333300;
+        box-shadow:none;
+    }
+
+    30%,39%{
+        background:yellow;
+        box-shadow:0 0 25px yellow;
+    }
+
+    40%,100%{
+        background:#333300;
+        box-shadow:none;
+    }
+}
+@keyframes redCycle{
+
+    0%,39%{
+        background:#330000;
+        box-shadow:none;
+    }
+
+    40%,64%{
+        background:red;
+        box-shadow:0 0 25px red;
+    }
+
+    65%,100%{
+        background:#330000;
+        box-shadow:none;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bg {
+  background: linear-gradient(to bottom, #18094e 75%, #121080 100%);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  animation: dayNight 9s infinite linear;
+}
+@keyframes dayNight{
+    0%, 60%{
+        filter: brightness(1);
+    }
+    60%, 100%{
+        filter: brightness(0.9);
+    }
+}
+#building1, #building2, #building3, #building4, #building5 {
+  position: absolute;
+  bottom: 11px;
+  background-color: #292020;
+  border: 2px solid #1a1414;
+  z-index: 2;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px;
+
+}
+
+#building1 {
+  left: 270px;
+  height: 420px;
+  width: 250px;
+} 
+
+#building2 {
+  left: 460px;
+  height: 280px;
+  width: 190px;
+  background-color: #3d2f2f;
+}
+
+#building3 {
+  left: 610px;
+  height: 350px;
+  width: 220px;
+}
+
+#building4 {
+  left:800px;
+  height: 200px;
+  width: 180px;
+  background-color: #3d2f2f;
+}
+
+#building5 {
+  left: 950px;
+  height: 480px;
+  width: 250px;
+}
+.window{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(253, 253, 5);
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    box-shadow:0 0 20px yellow;
+}
+.car{
+    position:absolute;
+    bottom:5px;
+    left:850px;
+    font-size:250px;
+    animation:moveCar 9s infinite linear;
+}
+@keyframes moveCar{
+
+    /* Fast movement */
+    0%{
+        left:850px;
+    }
+
+    /* Near signal */
+    30%{
+        left:450px;
+    }
+
+    /* Slow approach */
+    40%{
+        left:350px;
+    }
+
+    /* Stop at signal */
+    65%{
+        left:350px;
+    }
+
+    /* Move again */
+    100%{
+        left:-300px;
+    }
+}
