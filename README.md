@@ -4,7 +4,7 @@
 
 ### 🔗 [Live Demo](https://amritasoni-dev.github.io/Traffic-Light-Animation/)
 
-![Demo](Screenshot%202026-06-13%20101914.png)
+![Demo](Demo.png)
 
 A pure HTML and CSS project featuring an animated traffic signal, synchronized vehicle movement, subtle lighting effects, and a beautiful night city skyline with glowing windows.
 
